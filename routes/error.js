@@ -1,1 +1,1 @@
-var Db=require("../db"),$=require("jquery-deferred");module.exports={"default":{params:{message:{required:!0}},handler:function(e,r){Db.insert("errors",{_id:(new Date).getTime(),playerId:e.player._id,side:"client",message:r.message});var s=$.Deferred();return s.resolve({success:!0}),s}}};
+var Db=require("../db"),$=require("jquery-deferred");module.exports={"default":{params:{message:{required:!0}},handler:function(e,r){var u=$.Deferred();return u.resolve({success:!0}),u}}};
