@@ -1,0 +1,1 @@
+function getComp(t,e){return{_id:t,uid:(new Date).getTime(),status:e?0:1,res:[],q:0,disabled:e,members:[],last:(new Date).getTime()}}for(var comps=[1,0],compCollection=[],wcat=0;9>wcat;wcat++){for(var wcatDetails={_id:wcat,comps:[]},i=0;i<comps.length;i++)wcatDetails.comps.push(getComp(i,!comps[i]));compCollection.push(wcatDetails)}exports.comp=compCollection;
